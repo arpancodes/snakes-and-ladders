@@ -15,9 +15,11 @@ public class Main {
         Dice dice = new Dice();
         int lastTurn = 2;
 
-        System.out.println("So here is the snakes and ladders Board, press 'y' turn by turn to roll the dice. Lets starts!");
+        System.out.println("So here is the snakes and ladders Board, press 'y' \n" +
+                " turn by turn to roll the dice. Lets starts!");
+        board.printBoard();
         while (true) {
-            board.printBoard();
+
             String next = scan.nextLine();
             if (next.equals("y")) {
                 if (lastTurn == 2) {
